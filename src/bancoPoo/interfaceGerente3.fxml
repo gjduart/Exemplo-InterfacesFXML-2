@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="384.0" prefWidth="569.0" style="-fx-background-color: indigo;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bancoPoo.InterfaceGerenteController">
+   <children>
+      <Pane layoutX="107.0" layoutY="-6.0" prefHeight="406.0" prefWidth="497.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="INDIGO" layoutX="287.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Banco Imobiliario">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Text>
+            <Line endX="100.0" layoutX="383.0" layoutY="38.0" startX="-100.0" stroke="INDIGO" />
+            <Line endX="100.0" layoutX="383.0" layoutY="13.0" startX="-100.0" stroke="INDIGO" />
+            <Text fill="INDIGO" layoutX="291.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerencia" />
+            <Pane fx:id="Cadastro" layoutY="68.0" prefHeight="338.0" prefWidth="497.0" style="-fx-background-color: White;" visible="false">
+               <children>
+                  <TextField fx:id="txCadastroNome" layoutX="124.0" layoutY="47.0" prefHeight="25.0" prefWidth="300.0" promptText="Nome Completo" style="-fx-border-color: INDIGO;" />
+                  <TextField fx:id="txCadastroEndereco" layoutX="124.0" layoutY="86.0" prefHeight="25.0" prefWidth="300.0" promptText="Endereco" style="-fx-border-color: INDIGO;" />
+                  <TextField fx:id="txCadastroProfissao" layoutX="124.0" layoutY="126.0" prefHeight="25.0" prefWidth="300.0" promptText="Profissao" style="-fx-border-color: INDIGO;" />
+                  <TextField fx:id="txCadastroRg" layoutX="124.0" layoutY="166.0" prefHeight="25.0" prefWidth="142.0" promptText="RG" style="-fx-border-color: INDIGO;" />
+                  <TextField fx:id="txCadastroCPF" layoutX="276.0" layoutY="166.0" prefHeight="25.0" prefWidth="148.0" promptText="CPF" style="-fx-border-color: INDIGO;" />
+                  <PasswordField fx:id="txCadastroSenha" layoutX="124.0" layoutY="209.0" prefHeight="27.0" prefWidth="142.0" promptText="senha" style="-fx-border-color: indigo;" />
+                  <Button fx:id="btSalvar" layoutX="289.0" layoutY="260.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="148.0" style="-fx-background-color: Indigo;" text="Salvar" textFill="WHITE" />
+                  <Text fill="INDIGO" layoutX="21.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Cliente">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="Acesso" layoutX="153.0" layoutY="104.0" prefHeight="236.0" prefWidth="268.0" style="-fx-background-color: #363636;" visible="false">
+               <children>
+                  <TextField fx:id="txUsuario" layoutX="107.0" layoutY="44.0" promptText="Usuario" style="-fx-background-color: white; -fx-border-color: indigo;" />
+                  <Button fx:id="btEntrar" layoutX="152.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: INdigo;" text="Login" textFill="WHITE" />
+                  <Text fill="WHITE" layoutX="21.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acesso aos dados de Clientes" />
+                  <PasswordField fx:id="txPassword" layoutX="108.0" layoutY="93.0" promptText="Senha" style="-fx-border-color: indigo;" />
+               </children>
+            </Pane>
+            <Pane fx:id="Pagamento" layoutX="76.0" layoutY="87.0" prefHeight="255.0" prefWidth="338.0" visible="false">
+               <children>
+                  <TextField fx:id="txIdFuncionario" layoutX="56.0" layoutY="14.0" promptText="Id funcionario" />
+                  <TextField fx:id="txIdValor" layoutX="56.0" layoutY="54.0" promptText="valor" />
+                  <Button fx:id="btPagar" layoutX="123.0" layoutY="111.0" mnemonicParsing="false" style="-fx-background-color: indigo;" text="Pagamento" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="AcessoFuncionarios" layoutX="149.0" layoutY="87.0" prefHeight="265.0" prefWidth="229.0" visible="false">
+               <children>
+                  <TextField fx:id="txEntradaFunc" layoutX="33.0" layoutY="43.0" promptText="Id Funcionario" />
+                  <PasswordField fx:id="txSenhaFunc" layoutX="33.0" layoutY="90.0" promptText="Senha" />
+                  <Button fx:id="botaoEntrar" layoutX="87.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: indigo;" text="ENTRAR" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="CadastroFunc" layoutX="19.0" layoutY="87.0" prefHeight="297.0" prefWidth="459.0" style="-fx-background-color: White;">
+               <children>
+                  <TextField fx:id="txFuncNome" layoutX="124.0" layoutY="47.0" prefHeight="25.0" prefWidth="300.0" promptText="Nome Completo" style="-fx-border-color: INDIGO;" />
+                  <TextField fx:id="txFuncEndereco" layoutX="124.0" layoutY="86.0" prefHeight="25.0" prefWidth="300.0" promptText="Endereco" style="-fx-border-color: INDIGO;" />
+                  <TextField fx:id="txFuncProfissao" layoutX="124.0" layoutY="126.0" prefHeight="25.0" prefWidth="300.0" promptText="Profissao" style="-fx-border-color: INDIGO;" />
+                  <TextField fx:id="txFuncRg" layoutX="124.0" layoutY="166.0" prefHeight="25.0" prefWidth="142.0" promptText="RG" style="-fx-border-color: INDIGO;" />
+                  <TextField fx:id="txFuncCPF" layoutX="276.0" layoutY="166.0" prefHeight="25.0" prefWidth="148.0" promptText="CPF" style="-fx-border-color: INDIGO;" />
+                  <PasswordField fx:id="txFuncSenha" layoutX="124.0" layoutY="209.0" prefHeight="27.0" prefWidth="142.0" promptText="senha" style="-fx-border-color: indigo;" />
+                  <Button fx:id="btSalvar1" layoutX="289.0" layoutY="260.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="148.0" style="-fx-background-color: Indigo;" text="Salvar" textFill="WHITE" />
+                  <Text fill="INDIGO" layoutX="21.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Funcionarios">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="276.0" layoutY="210.0" promptText="Nivel de Acesso" style="-fx-border-color: indigo;" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button fx:id="Cadastrar" layoutX="-1.0" layoutY="64.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: white;" text="Cadastrar" textFill="INDIGO" />
+      <Button fx:id="Acessar" layoutY="112.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: white;" text="Acessar" textFill="INDIGO" />
+      <Button fx:id="btPagamento" layoutY="162.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: white;" text="Pagamentos" textFill="INDIGO" />
+      <Button fx:id="btFuncionarios" layoutY="262.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: white;" text="Funcionarios" textFill="INDIGO" />
+      <Button fx:id="btCriarFuncionario" layoutY="212.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: white;" text="Criar Funcionario" textFill="INDIGO" />
+   </children>
+</AnchorPane>

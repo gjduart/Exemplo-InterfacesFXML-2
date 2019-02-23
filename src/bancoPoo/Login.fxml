@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="Fundo" prefHeight="400.0" prefWidth="550.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bancoPoo.BancoControleLogin">
+    <children>
+      <ImageView id="fotofundo" fitHeight="417.0" fitWidth="591.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../imagens/csm_People-in-a-line-at-an-ATM-_iStock-588610958_andresr_94702f0756.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-9.0" opacity="0.34" prefHeight="25.0" prefWidth="759.0" style="-fx-background-color: #1C1C1C;" />
+      <Button id="btLogin" fx:id="btLogin" layoutX="598.0" layoutY="211.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="69.0" style="-fx-background-color: #4B0082;" text="Entrar" textFill="WHITE" />
+      <Label id="labelVersao" prefHeight="17.0" prefWidth="305.0" text="GUI 05.09.2018 - Banco Imobiliario v1.0">
+         <font>
+            <Font size="9.0" />
+         </font></Label>
+      <Label id="labelCliente" fx:id="label1" layoutX="605.0" layoutY="34.0" minHeight="16" minWidth="69" text="Ja é cliente ?" textFill="WHITE" />
+      <TextField id="txEntrada" fx:id="txLogin" layoutX="598.0" layoutY="67.0" onAction="#botaoLogin" prefHeight="38.0" prefWidth="141.0" promptText="Numero do Cartao" style="-fx-background-color: transparent;">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </TextField>
+      <Line endX="94.0" layoutX="645.0" layoutY="101.0" startX="-47.0" stroke="#981aff" />
+      <Text disable="true" fill="INDIGO" layoutX="7.0" layoutY="45.0" opacity="0.56" stroke="#5b5b5b" strokeLineCap="BUTT" strokeType="INSIDE" strokeWidth="0.0" style="-fx-background-color: #4B0082;" text="Banco Imobiliario " wrappingWidth="328.13671875">
+         <font>
+            <Font name="Arial" size="27.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.17" contrast="1.0" hue="0.1" saturation="-0.69" />
+         </effect>
+      </Text>
+      <Line endX="114.0" layoutX="105.0" layoutY="51.0" startX="-100.0" stroke="INDIGO" />
+      <Line endX="114.0" layoutX="106.0" layoutY="21.0" startX="-100.0" stroke="INDIGO" />
+      <ImageView fitHeight="30.0" fitWidth="39.0" layoutX="219.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/cifrao.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.14" contrast="-0.24" hue="0.45" />
+         </effect>
+      </ImageView>
+      <Button id="sair" fx:id="btSair" layoutX="724.0" layoutY="-5.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="32.0" style="-fx-background-color: transparent;" text="x" textFill="#8f09f5">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="Senha" layoutX="593.0" layoutY="124.0" promptText="Senha" style="-fx-background-color: transparent;">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="-0.45" />
+         </effect>
+      </PasswordField>
+      <Line endX="94.0" layoutX="646.0" layoutY="151.0" startX="-47.0" stroke="#981aff" />
+      <ImageView fitHeight="25.0" fitWidth="17.0" layoutX="722.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/key-outline.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.57" contrast="-0.98" hue="-1.0" saturation="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="17.0" layoutX="720.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/login-rounded-right-filled.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.4" contrast="-0.98" hue="-1.0" saturation="-1.0" />
+         </effect>
+      </ImageView>
+      <Label fx:id="label3" layoutX="601.0" layoutY="157.0" prefHeight="52.0" prefWidth="142.0" text="Usuario ou senha &#10;incorreto!&#10;" textFill="#bc0000" visible="false" />
+    </children>
+</AnchorPane>
